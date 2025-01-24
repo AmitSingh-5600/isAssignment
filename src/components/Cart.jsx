@@ -5,13 +5,17 @@ const Cart = () => {
     <>
       <div className="flex-col">
         <h3 className="text-2xl text-center underline p-4">Items in cart</h3>
-        <div className="min-w-100 mx-auto grid gap-10 w-2/6 ">
+        <div className="mx-auto grid gap-10 w-2/6 ">
           {productList.products.map((product) => (
             <div
               key={product.id}
               className="flex  bg-slate-100 p-4 justify-between"
             >
-              <img className="h-30" src={product.imageUrl} alt="product" />
+              <img
+                className="h-10 sm:h-50 "
+                src={product.imageUrl}
+                alt="product"
+              />
 
               <div className="w-3/6">
                 <h4>{product.name}</h4>
