@@ -9,8 +9,8 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/isAssignment/" element={<Home />} />
+          <Route path="/isAssignment/cart" element={<Cart />} />
         </Routes>
       </div>
     </BrowserRouter>
